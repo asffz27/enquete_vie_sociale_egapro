@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La vie sociale des données - Egapro</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            min-height: 100vh; /* Assure une hauteur minimale */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Styles de l'en-tête */
+        header {
+            background: linear-gradient(45deg, red, blue);            
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 1rem; /* Ajout de marge inférieure pour l'espacement */
+        }
+
+        /* Styles du menu de navigation */
+        nav {
+            overflow: visible;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+            border-bottom: 2px solid rgba(23, 4, 4, 0.244);
+        }
+
+        /* Styles du menu déroulant */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 200px; /* Limite la largeur du menu */
+            right: auto; /* Evite le débordement à droite par défaut */
+        }
+
+        nav ul li:last-child .dropdown-menu {
+            right: 0; /* Gère les débordements sur le dernier élément */
+            left: auto;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Styles de la section principale */
+        main {
+            flex: 1; /* Prend l'espace restant pour pousser le footer en bas */
+            padding: 2rem;
+            padding-bottom: 5rem;
+            text-align: left; 
+        }
+
+        /* Styles des images */
+        .small-image {
+            width: 175px;
+            height: auto;
+        }
+
+        /* Styles du pied de page */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative; /* Le footer est fixe grâce au flex */
+            width: 100%;
+        }
+
+        /* Responsivité */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La vie sociale des données - Egapro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="introduction.html" >Introduction</a></li>
+                <li><a href="origine.html"   >L’origine du jeu de données</a></li>
+                <li><a href="categories.html"  >Le critère Egapro</a></li>
+                <li><a href="usage.html" >Un index aux ambitions fortes</a></li>
+                <li><a href="imparfait.html"  >Egapro, un index imparfait</a></li>
+                <li><a href="conclusion.html" >Conclusion</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active"> Annexes </a>
+                    <ul class="dropdown-menu" >
+                        <li><a href="graphes.html">Graphes</a></li>
+                        <li><a href="entretiens.html">Entretiens</a></li>
+                        <li><a href="questionnaire.html">Questionnaire </a></li>
+                        <li><a href="textes_de_loi.html">Textes de loi</a></li>
+                        <li><a href="tableaux_equivalence.html">Tableaux d’équivalence</a></li>
+                        <li><a href="bibliographie.html">Bibliographie</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<body>
+    <h1>Entretiens</h1>
+    <p>Nous avons sollicité des responsables politiques et des chercheurs, en particulier le Ministère du Travail et de l’Emploi, la Direction générale de l'administration de la fonction publique (DGAFP) et les parties prenantes de l'Initiative #StOpE, dans le but de recueillir leurs perspectives et d'approfondir notre analyse. Toutefois, nos tentatives de contact n'ont pas abouti. Nous avons donc choisi de nous concentrer principalement sur les responsables de l'égalité professionnelle au sein des entreprises.</p>
+
+    <h2>Entretien avec Madame Jacquot-Traxel, Group Talent Manager chez Lincoln</h2>
+    <h3>Indicateur pour Lincoln</h3>
+    <p><strong>Question :</strong> As-tu une idée de pourquoi vous êtes à 84/100 pour 2023, alors que la note moyenne des entreprises d’au moins 50 salariés est de 88 sur 100 pour l’année 2023 ?<br>
+    <strong>Réponse :</strong> On n’a pas été moins bons, mais le troisième onglet (congés maternité) a fait défaut : 3 femmes revenues de congés maternité, dont seulement une a été augmentée. Je pense que c’est une façon de voir les choses qui est manichéenne, un peu bête et méchante.</p>
+    <p><strong>Question :</strong> Vous regardez uniquement vos collaborateurs en France ? Est-ce que ça serait mieux ou moins bien si vous regardiez à l’étranger aussi ?<br>
+    <strong>Réponse :</strong> Obligation au niveau du périmètre France (où le groupe a la moitié de sa masse salariale), pour les obligations légales on regarde la France mais sinon pour nos pilotages groupe on regarde le monde entier. Avec la typologie de cet index et son mode de calcul, on serait meilleur à l’échelle globale car à l’étranger les hommes sont souvent mieux payés que les femmes donc cela équilibrerait le fait qu’en France, chez Lincoln, les femmes sont majoritairement mieux payées.</p>
+
+    <h3>Analyse des Écarts</h3>
+    <p><strong>Question :</strong> Quels sont les écarts qui vous préoccupent le plus, et pourquoi ?<br>
+    <strong>Réponse :</strong> Nous sommes préoccupés par les écarts au niveau de la tranche des femmes qui ont leurs enfants, que nous avons d’ailleurs remarqué grâce à cet indicateur. En effet, les femmes de moins de 30 ans et de plus de 50 ans ont en général des meilleurs résultats dans les quatre indicateurs que les hommes. On a une réalité qui est absurde, les femmes de moins de 30 et plus de 50 ans, gagnent plus que leurs homologues masculins, pour beaucoup de raisons différentes et cela nous dessert dans les scores.</p>
+
+    <h3>Pratiques d'Amélioration et Plans d'Action</h3>
+    <p><strong>Question :</strong> Pensez-vous que certains indicateurs devraient être modifiés ou ajustés dans l'index Egapro pour mieux refléter les réalités actuelles ?<br>
+    <strong>Réponse :</strong> Le troisième indicateur sur la maternité me questionne de part sa raideur/binarité. Mesure de données purement chiffrées, manque de qualitatif (nous avons plus de qualitatif dans nos indicateurs internes). Mauvaise note si les femmes sont bien mieux payées que les hommes : cela fait sens de vouloir l’égalité parfaite entre les genres mais en même temps, ne devrions-nous pas nous féliciter d’avoir des femmes mieux payées parce qu’elles obtiennent de meilleurs résultats ? (Comme la rémunération chez Lincoln est variable selon les commissions obtenues pour chaque personne placée dans une entreprise). Mauvaise prise en compte des réalités de notre métier (dans la rémunération il y a une grosse part liée aux commissions donc les femmes entre 30 et 40 ans qui s’occupent de leurs enfants et qui « choisissent » donc de s’investir légèrement moins, alors que dans d’autres métiers ton salaire est fixe et tu dois venir au bureau tous les jours de 8h à 18h). Je dois gérer toute la récolte et la mise en forme des données pour les soumettre au gouvernement, c’est un obstacle car pas de système RH qui gère ça chez nous, ça me prend beaucoup de temps.</p>
+
+    <h3>Comparaison avec le Secteur et Benchmarking</h3>
+    <p><strong>Question :</strong> Comment se compare votre score par rapport aux autres entreprises de votre secteur d'activité ?<br>
+    <strong>Réponse :</strong> Oui, on regarde les index des entreprises dans notre secteur, on lit les commentaires faits sur cet index. Mais j’avoue qu’on regarde ça comme une obligation légale plus que comme un outil de pilotage. De plus, comme nous avons un bon score, le CSE ne nous challenge pas là-dessus. Par ailleurs, le groupe Lincoln est assez bon sur l’égalité entre les femmes et les hommes, notre enjeu est plutôt la question de l’emploi des seniors.</p>
+
+    <h2>Extrait de l’entretien avec une membre de l’équipe des ressources humaines du groupe Visages du Monde</h2>
+    <p>“Je ne peux pas répondre à tes questions sur Egapro, car l’index est une mesure obligatoire à partir de 50 salariés. Nous ne remplissons pas cette condition dans nos structures donc nous n’avons pas à utiliser l’index. Nous trouvons d’ailleurs cela étrange mais nous ne rentrons pas dans les critères. Si nous avions à le faire, nous nous servirions des données RH (paye, calcul par catégorie, niveau de qualification, sexe, etc...).”</p>
+
+    <h2>Entretien avec Mathilde Derbère, membre de l’équipe des ressources humaines de l’entreprise Weber, société appartenant à Saint-Gobain</h2>
+    <p><strong>Question :</strong> Comment utilises-tu Egapro ?<br>
+    <strong>Réponse :</strong> Egapro permet de faire un bilan et un suivi en interne. C’est très pratique pour connaître les points forts mais aussi les points faibles de notre entreprise et la pertinence de sa politique sociale.</p>
+    <p><strong>Question :</strong> Comment l’égalité professionnelle se met-elle en place dans ton entreprise ?<br>
+    <strong>Réponse :</strong> Weber appartient à l’entreprise Saint-Gobain. Saint-Gobain a des “accords groupes”. Pour toutes les sociétés, un objectif est donc annuellement fixé par la maison mère. Ensuite, chaque société a ses propres dialogues sociaux, que ce soit avec le CSE mais aussi des syndicats, comme la CFDT chez nous. Chaque société a sa propre politique sociale. Chaque année, nous nous mettons donc autour de la table pour définir des objectifs. Aussi, pendant l’année, la commission sociale composée de Weber suit les indicateurs d’égalité professionnelle pour voir si nous suivons bien les objectifs fixés.</p>
+    <p><strong>Question :</strong> Quelles inégalités femmes-hommes remarques-tu dans l’entreprise ?<br>
+    <strong>Réponse :</strong> Nous avons 70% d’hommes et 30% de femmes. L’écart est énorme mais cela s’explique par les missions de l’entreprise. Toutes les entreprises françaises n’ont pas les mêmes problématiques. Certaines, par leur nature et leur fonction, sont plus genrées. Les caristes et le travail en usine ou les postes de commerciaux sont des emplois essentiellement masculins tandis que les fonctions en ressources humaines ou de correspondance clientèle sont essentiellement féminines.</p>
+    <p><strong>Question :</strong> Cela se remarque-t-il dans les promotions ?<br>
+    <strong>Réponse :</strong> Absolument pas. Si nous décidons de promouvoir 50% des effectifs, nous promouvons 50% des 70% hommes et 50% des 30% femmes. On a donc proportionnellement autant de promotion chez les femmes que chez les hommes.</p>
+    <p><strong>Question :</strong> Pourquoi l’égalité salariale n’est-elle pas atteinte ?<br>
+    <strong>Réponse :</strong> Ce n’est pas si facile. Les salaires se calculent par l’ancienneté, leur parcours professionnel, leurs études… On a donc de nombreux paramètres qui rentrent en compte. On dit souvent que les femmes négocient mal leur salaire, je ne suis pas d’accord, on fait des efforts considérables pour réduire les inégalités.</p>
+    <p><strong>Question :</strong> Quelles sont les difficultés pour atteindre l’égalité professionnelle ?<br>
+    <strong>Réponse :</strong> Nous avons l’ambition de l’égalité, bien évidemment. On ne l’atteint pas à 100% mais nous faisons des mesures dans ce sens-là. Nous faisons tout de même face à des événements exogènes que nous ne pouvons pas contrôler. Par exemple, si on a un départ massif dans l’entreprise pour des raisons extérieures à sa politique, et que ce sont par hasard des femmes qui partent, il n’y a pas de justification à donner parce qu’elles démissionnent de leur propre fait mais ce n’est pas volontaire de la part de l’entreprise. C’est contextuel. Néanmoins, nous ne devons pas tomber dans de la discrimination positive. Il faut être juste par rapport aux compétences des salariés. A dossier égal, il est vrai que nous pouvons favoriser une femme, mais ça s’arrête là. Il ne faut pas tomber dans une lubie des statistiques pour avoir un 50-50 parfait. Ce n’est pas notre but et nous savons que nous n’y arriverons pas.</p>
+</ul>
+</body>
+</html>
+
+</body>
+</html> 
+</body>
+</html>
+</main>
+<footer>
+<p>&copy; 2024 La vie sociale des données - Egapro</p>
+</footer>
+</body>
+</html>

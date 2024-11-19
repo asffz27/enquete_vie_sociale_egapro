@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La vie sociale des données - Egapro</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            min-height: 100vh; /* Assure une hauteur minimale */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Styles de l'en-tête */
+        header {
+            background: linear-gradient(45deg, red, blue);            
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 1rem; /* Ajout de marge inférieure pour l'espacement */
+        }
+
+        /* Styles du menu de navigation */
+        nav {
+            overflow: visible;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+            border-bottom: 2px solid rgba(23, 4, 4, 0.244);
+        }
+
+        /* Styles du menu déroulant */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 200px; /* Limite la largeur du menu */
+            right: auto; /* Evite le débordement à droite par défaut */
+        }
+
+        nav ul li:last-child .dropdown-menu {
+            right: 0; /* Gère les débordements sur le dernier élément */
+            left: auto;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Styles de la section principale */
+        main {
+            flex: 1; /* Prend l'espace restant pour pousser le footer en bas */
+            padding: 2rem;
+            padding-bottom: 5rem;
+            text-align: center;
+        }
+
+        /* Styles des images */
+        .small-image {
+            width: 175px;
+            height: auto;
+        }
+
+        /* Styles du pied de page */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative; /* Le footer est fixe grâce au flex */
+            width: 100%;
+        }
+
+        /* Responsivité */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La vie sociale des données - Egapro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="introduction.html" class="active">Introduction</a></li>
+                <li><a href="origine.html">L’origine du jeu de données</a></li>
+                <li><a href="categories.html">Le critère Egapro</a></li>
+                <li><a href="usage.html">Un index aux ambitions fortes</a></li>
+                <li><a href="imparfait.html">Egapro, un index imparfait</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+                <li class="dropdown">
+                    <a href="#">Annexes</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="graphes.html">Graphes</a></li>
+                        <li><a href="entretiens.html">Entretiens</a></li>
+                        <li><a href="questionnaire.html">Questionnaire </a></li>
+                        <li><a href="textes_de_loi.html">Textes de loi</a></li>
+                        <li><a href="tableaux_equivalence.html">Tableaux d’équivalence</a></li>
+                        <li><a href="bibliographie.html">Bibliographie</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Introduction</h2>
+        <p>Nous avons décidé de nous intéresser à l’index de l’égalité professionnelle et représentation équilibrée femmes-hommes, dit Egapro. Mis en place par la loi du 5 septembre 2018 pour la liberté de choisir son avenir professionnel, il a pour objectif de calculer les écarts de rémunération entre les femmes et les hommes dans les entreprises de 50 salariés ou plus. Bien que peu connu du grand public, il revêt des enjeux divers, notamment sociaux, économiques ou encore politiques. Il nous a donc semblé pertinent d’étudier ce récent index qui joue une place toujours plus grande dans les décisions stratégiques des entreprises.</p>
+        <p>L’article 1er de la Constitution de 1958 dispose que “la loi favorise l'égal accès des femmes et des hommes aux mandats électoraux et fonctions électives, ainsi qu'aux responsabilités professionnelles et sociales”. L’assertion “ainsi qu'aux responsabilités professionnelles et sociales” a été ajoutée par la loi constitutionnelle du 23 juillet 2008 et a déplacé l’alinéa entier de l’article 3 à l’article 1. Le politique envoie ici un signe extrêmement fort puisqu’il place l’égalité entre les hommes et les femmes dans les responsabilités professionnelles et sociales au même niveau que l’indivisibilité de la République. La création de l’index dix ans plus tard permet de vérifier et d’inciter au respect de ce principe à valeur constitutionnelle.</p>
+        <p>Egapro est donc un index qui a vocation à réduire les inégalités, notamment salariales, et à inciter les dirigeants à instituer une politique sociale et managériale mettant les employées et employés de leurs entreprises sur un pied d’égalité. Les notes de chaque entreprise sont ensuite publiées publiquement, ce qui renforce l’intérêt des entreprises à mettre en place les mesures nécessaires pour obtenir la meilleure note possible. En cas de mauvaise note, les entreprises se doivent de publier les mesures de correction définies pour améliorer son index. Egapro doit donc être vu comme un outil d’accompagnement.</p>
+        <p>Il convient donc de se demander comment la quantification des résultats de l’index Egapro renforce les pratiques et l’égalité sociales des entreprises tout en conservant leurs performances et dynamiques économiques.</p>
+        <p>Pour répondre à ce questionnement, nous étudierons le jeu de données de l’index avant de nous pencher sur la méthodologie employée par ce dernier pour calculer la note. Ensuite, nous verrons les différents usages des données puis nous finirons par analyser les limites de l’index, notamment ses biais ou ses difficultés d’interprétation.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 La vie sociale des données - Egapro</p>
+    </footer>
+</body>
+</html>

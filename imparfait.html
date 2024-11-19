@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La vie sociale des données - Egapro</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            min-height: 100vh; /* Assure une hauteur minimale */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Styles de l'en-tête */
+        header {
+            background: linear-gradient(45deg, red, blue);            
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 1rem; /* Ajout de marge inférieure pour l'espacement */
+        }
+
+        /* Styles du menu de navigation */
+        nav {
+            overflow: visible;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+            border-bottom: 2px solid rgba(23, 4, 4, 0.244);
+        }
+
+        /* Styles du menu déroulant */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 200px; /* Limite la largeur du menu */
+            right: auto; /* Evite le débordement à droite par défaut */
+        }
+
+        nav ul li:last-child .dropdown-menu {
+            right: 0; /* Gère les débordements sur le dernier élément */
+            left: auto;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Styles de la section principale */
+        main {
+            flex: 1; /* Prend l'espace restant pour pousser le footer en bas */
+            padding: 2rem;
+            padding-bottom: 5rem;
+            text-align: left; 
+        }
+
+        /* Styles des images */
+        .small-image {
+            width: 175px;
+            height: auto;
+        }
+
+        /* Styles du pied de page */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative; /* Le footer est fixe grâce au flex */
+            width: 100%;
+        }
+
+        /* Responsivité */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La vie sociale des données - Egapro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="introduction.html" >Introduction</a></li>
+                <li><a href="origine.html"   >L’origine du jeu de données</a></li>
+                <li><a href="categories.html"  >Le critère Egapro</a></li>
+                <li><a href="usage.html" >Un index aux ambitions fortes</a></li>
+                <li><a href="imparfait.html" class="active" >Egapro, un index imparfait</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+                <li class="dropdown">
+                    <a href="#">Annexes</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="graphes.html">Graphes</a></li>
+                        <li><a href="entretiens.html">Entretiens</a></li>
+                        <li><a href="questionnaire.html">Questionnaire </a></li>
+                        <li><a href="textes_de_loi.html">Textes de loi</a></li>
+                        <li><a href="tableaux_equivalence.html">Tableaux d’équivalence</a></li>
+                        <li><a href="bibliographie.html">Bibliographie</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Les limites principales d’Egapro</h2>
+        <p>L’index Egapro, bien qu’il vise à promouvoir l’égalité professionnelle, présente plusieurs limites conceptuelles et pratiques. Son utilisation en entreprise est soumise à des critiques qui remettent en question son efficacité à mesurer les inégalités de manière juste et représentative. Nous analyserons ces limites selon les principaux axes suivants.</p>
+        
+        <h3>Simplicité des indicateurs et manque de nuance</h3>
+        <p>L'index Egapro repose sur une méthodologie qui tend à simplifier la complexité des inégalités professionnelles en les réduisant à seulement cinq indicateurs. Cette simplification entraîne des limitations importantes dans la capture de la diversité des inégalités existantes.</p>
+        <p>D'une part, on constate un certain réductionnisme : les cinq indicateurs retenus par l'index sont strictement quantitatifs, ce qui laisse de côté des dimensions essentielles pour comprendre les inégalités. En effet, cet index ne prend pas en considération des aspects fondamentaux tels que la ségrégation professionnelle horizontale, qui se traduit par une concentration des femmes dans certains métiers, et la ségrégation verticale, qui se manifeste par leur sous-représentation aux postes de direction. A la simplicité des indicateurs s'ajoutent des choix de calibrage questionnables. Il convient de remettre en cause le “seuil de pertinence” fixé par le gouvernement. Il s’agit de la marge de tolérance équivalente à 2 à 5% des écarts des salaires. Cela signifierait qu’une différence de 15% de salaire permettrait d’obtenir 30 points sur 40 dans cette catégorie. De plus, des dimensions comme l'accès à la formation professionnelle et les conditions de travail spécifiques aux femmes, notamment le harcèlement sexuel, sont complètement omises par cette méthodologie. D'autre part, l'index présente une vision binaire des inégalités professionnelles en se concentrant uniquement sur les différences entre hommes et femmes. Il ignore ainsi la diversité des situations individuelles et ne prend pas en compte l’interaction du genre avec d'autres formes de discrimination qui peuvent affecter les salariés, notamment celles liées à l'origine ethnique, à l'orientation sexuelle, ou encore au handicap. Cette approche binaire limite la capacité de l'index à représenter la complexité des discriminations qui peuvent se croiser et se renforcer dans le milieu professionnel.</p>
+        
+        <h3>Risque de manipulation et de "Window Dressing"</h3>
+        <p>L’index Egapro peut encourager certaines entreprises à améliorer artificiellement leur score sans aborder les causes profondes des inégalités. Cela présente plusieurs risques en matière de fiabilité et d’impact réel des mesures.</p>
+        <p>Tout d'abord, il existe une incitation à la superficialité : certaines entreprises peuvent se contenter de mettre en place des actions superficielles pour augmenter leur score, sans pour autant modifier en profondeur leurs pratiques internes. Par conséquent, le score obtenu peut devenir trompeur, offrant une image flatteuse mais peu représentative de la réalité des inégalités au sein de l’entreprise. Nous pouvons nous servir de l’exemple que donne Oxfam France dans sa note sur l’index homme-femme (Jarry, 2023). Un employeur peut obtenir 15 points sur 100 en augmentant une employée à son retour de congé maternité. Cependant, cette augmentation constitue une obligation légale. Ainsi, une entreprise peut, tout en ne respectant pas les dispositions du droit du travail, atteindre un score supérieur à 75 points (Exposé des motifs, loi du 23 mars 2006). Enfin, l’index prend en compte la chance de recevoir une augmentation mais néglige son montant. Une entreprise pourrait obtenir tous les points alors que le montant de l’augmentation serait bien moins important que celui des hommes. Ensuite, l’index souffre d’une opacité des données. En effet, les données sur lesquelles repose le score de chaque entreprise sont fournies par les entreprises elles-mêmes, sans contrôle systématique ou vérification indépendante. Cette absence de contrôle rigoureux remet en question la fiabilité des informations transmises. Cela peut également nuire à la comparabilité des résultats entre entreprises, certaines d’entre elles pouvant être tentées de manipuler leurs chiffres pour apparaître plus vertueuses qu’elles ne le sont réellement. La Céreq a montré que l’index est perçu comme “chronophage” et “insuffisant” selon les acteurs du secteur RH (Carl et al., 2022). Cette perception pourrait entraîner des insuffisances de la part des parties prenantes dans les données transmises.</p>
+        
+        <h3>Limites méthodologiques et difficultés d'interprétation</h3>
+        <p>Les choix méthodologiques et les difficultés d'interprétation des résultats de l'index Egapro posent des limites spécifiques qui impactent sa représentativité et son efficacité.</p>
+        <p>Tout d’abord, le choix des catégories professionnelles est laissé à la discrétion des entreprises, ce qui complique les comparaisons inter-entreprises. En effet, chaque entreprise peut définir ses propres catégories professionnelles et tranches d'âge, et ces différences dans la catégorisation peuvent fausser la représentativité de l’index. Cela rend difficile l’obtention de résultats comparables et fiables, car deux entreprises similaires peuvent apparaître très différemment en fonction des critères qu’elles choisissent. Ensuite, certains indicateurs peuvent être incalculables dans certaines entreprises, notamment celles de petite taille ou avec une répartition atypique des salariés. Par exemple, si une entreprise compte trop peu de salariés dans une catégorie donnée, les indicateurs correspondants ne peuvent pas être calculés, ce qui biaise les résultats finaux et limite la capacité de l’index à fournir une évaluation représentative de l’égalité professionnelle dans ces cas. Cette limite a été mise en avant par la DARES qui dans son rapport Index de l’égalité professionnelle : quel bilan ? montre que l’index bénéficie aux grandes entreprises (Farvaque et Pernod-Lemattre, 2021). De plus, plusieurs publications ont mis en avant l’incapacité de l’index à prendre en compte le parcours de carrières complexes (Farvaque et Pernod-Lemattre, 2021; Tahri, 2021). Enfin, l’index repose exclusivement sur des données chiffrées, sans fournir de contexte ni d'explications qualitatives. Or, chaque entreprise possède des dynamiques spécifiques qui influencent ses résultats, et l’absence d’informations qualitatives empêche de comprendre les causes particulières des écarts observés. Cette approche quantitative limite donc la profondeur d’analyse et l’interprétation des résultats, en négligeant les aspects contextuels et qualitatifs des inégalités professionnelles.</p>
+        <!DOCTYPE html>
+
+    <h3>Limitations du jeu de données Egapro</h3>
+    <p>Le jeu de données Egapro, qui devrait constituer une base solide pour analyser les inégalités professionnelles, présente des limitations significatives dues aux contraintes d'accès et de mise à jour des informations.</p>
+    <p>En premier lieu, il existe un accès restreint aux données. Les informations disponibles sur la plateforme data.gouv.fr sont uniquement agrégées et ne fournissent pas de détails spécifiques par entreprise. Cette absence de granularité dans les données rend difficile la réalisation d’analyses approfondies et empêche la recherche de causes spécifiques des inégalités au sein des différentes organisations. En second lieu, la fréquence de mise à jour des données pose également problème. Bien que le jeu de données soit censé être actualisé très fréquemment, cette fréquence n’est pas toujours respectée, ce qui peut compromettre la pertinence et l'actualité des analyses. Une mise à jour irrégulière limite la fiabilité des informations disponibles pour les chercheurs et les acteurs cherchant à comprendre l’évolution des inégalités dans le temps.</p>
+    
+    <h3>Impact limité sur la réduction des inégalités</h3>
+    <p>L’index Egapro, bien qu’il ait pour objectif de lutter contre les inégalités professionnelles, présente un impact limité, ce qui réduit son efficacité et son pouvoir incitatif pour les entreprises. </p>
+    <p>D'une part, les sanctions appliquées sont faibles. Les entreprises qui ne respectent pas l’obligation de publication de leur score sont simplement soumises à une pénalité financière plafonnée à 1 % de leur masse salariale. Par ailleurs, les entreprises obtenant de mauvais résultats ne sont pas soumises à des sanctions financières. Elles sont toutefois tenues de publier des “mesures de correction” visant à l'amélioration de leur score. Ces faibles sanctions limitent l'incitation pour les entreprises à mettre en œuvre des actions significatives pour corriger les inégalités et à améliorer véritablement leurs pratiques. D'autre part, l'index accorde un regard excessif sur la rémunération, au détriment d’autres dimensions essentielles des inégalités professionnelles. En effet, l'index se concentre principalement sur les écarts de rémunération, alors que les inégalités dans le milieu professionnel couvrent également les différences de temps de travail. Ainsi, la question du travail à temps partiel n’est pas prise en compte par cet index. Pourtant, 79,5% de ces contrats sont occupés par des femmes (INSEE? 2020). Enfin, il convient de mettre en question les méthodes de calcul des opportunités de promotion et d’accès à des postes de responsabilité. La première ne prend pas en compte le montant des promotions tandis que la seconde ne se base que sur les dix salaires les plus élevés de l’entreprise. Cette superficialité limite la pertinence de l’index pour véritablement calculer l’égalité h/f au sein des entreprises françaises. En se focalisant uniquement sur la rémunération, l’index risque de négliger d’autres inégalités structurelles qui affectent la carrière des salariés et qui nécessiteraient une attention tout aussi importante. L'index Egapro, bien qu'il représente une avancée dans la reconnaissance des inégalités professionnelles, souffre de plusieurs biais méthodologiques qui limitent sa capacité à refléter fidèlement la réalité de la diversité des inégalités au sein des entreprises françaises. Ainsi, le rapport Salaires : 5 ans après l’Index, toujours pas d’égalité du Haut conseil à l’Egalité entre les femmes et les hommes critique le manque d’impact de l’index. Il aurait créé un “effet label” qui ne parviendrait pas à traiter durablement et profondément les inégalités (Pierre-Brossolette, 2024).</p>
+
+    <h2>Une représentation de la réalité nuancée</h2>
+    <p>Les résultats des entreprises sont accessibles sur le site egapro.travail.gouv.fr. Nous pouvons donc obtenir chaque note pour chaque entreprise. Lorsque nous avons fait des simulations de calcul, nous avons dû remplir un nombre énorme d'informations, que ce soit évidemment sur le sexe des employés mais aussi leur tranche d’âge ou leur catégorie socio-professionnelle, le nombre d’augmentations individuelles, de salariées augmentées pendant la période de congés et le nombre de femmes parmi les 10 plus hautes rémunérations. Malheureusement, le site ne donne pas accès à ces données précises et se contente de donner une note à chaque critère. L’usager doit donc se contenter d’une note. Tout de même, l’aide concernant l’index mise en place par le ministère de l’intérieur fournit des tableaux d’équivalence entre performance et nombre de points obtenus (voir annexe). Par exemple, pour l’indicateur écart de rémunération, l’écart est calculé pour chacun des groupes (ouvriers, employés, techniciens et agents de maîtrise, ingénieurs et cadre), “en pourcentage, pour chacun des groupes, en soustrayant la rémunération moyenne des femmes à la rémunération moyenne des hommes et en rapportant ce résultat à la rémunération moyenne des hommes”. Si le résultat obtenu est supérieur à 6% et inférieur ou égal à 7%, le nombre de points est de 33 mais il est de 37 si le résultat est supérieur à 2% et inférieur ou égal à 3%. Il est néanmoins impossible de savoir précisément le résultat que l’entreprise déclare. Le citoyen doit se contenter d’un intervalle, bien qu’il soit précis.</p>
+    <p>Aussi, l’index part d’un constat simple et souvent vrai : une augmentation de salaire est la traduction d’une évolution de carrière et de l’attribution d’un poste à plus haute responsabilité. Ainsi, les critères demandés par le site d’Egapro sont objectivement pertinents et permettent de représenter la politique sociale et managériale d’une entreprise. Néanmoins, l’index ne prend pas en compte la difficulté du travail effectué, comme les ouvriers de chantier qui sont très majoritairement des hommes. Cela nous a été confirmé dans l’entretien avec Mathilde Derbère. Son entreprise Weber est composée de 70% d’hommes. Cela s’explique par la nature et les missions de son entreprise. Ce constat est lié au travail physique qui demande de la force et par une faible offre d’emploi de la part des femmes qui préfèrent travailler dans d’autres secteurs. A ce titre, sur la base de données, pour une entreprise du BTP, les différentes filiales de l'entreprise Colas n’ont souvent pas de note et il est parfois écrit “NC” dans la colonne “Note Ecart rémunération” et encore plus souvent dans la partie “Note Ecart taux d’augmentation”. </p>
+    <p>Tout de même, suite à des réalisations de graphes (voir annexe), nous remarquons que la note moyenne des entreprises de 50 salariés ou plus ne cesse d’évoluer. Cette évolution est dûe à différents facteurs, notamment la médiatisation des enjeux d’égalité salariale et la dénonciation des entreprises aux mauvais résultats par des associations. L’index Egapro a permis à de nombreuses entreprises de remarquer des dysfonctionnements dans leur organisation et dans leur politique salariale, comme l’a rappelé Anaïs Jacquot-Traxel dans notre entretien. Les entreprises sont de plus en plus soucieuses de l’égalité salariale et de leur note attribuée par Egapro. Nous remarquons aussi que les entreprises de 1000 salariés et plus ont, en moyenne, de meilleure note que les autres (+ 3 points). Cela peut s’expliquer par le souci qu’elles apportent à leur image, à vouloir faire mieux que leur concurrent et à s’imposer comme leader à la fois dans leur domaine de fond mais aussi dans la promotion de l’égalité salariale. En cas de mauvaise note, elles ont aussi la capacité de réagir dès l’année suivante, en mettant en place des solutions de trésorerie efficaces et une forte mobilisation des services de ressources humaines pour orienter les recrutements dans un objectif de rééquilibrage des effectifs.</p>
+    <p>Enfin, dans son rapport Salaires : 5 ans après l’Index, toujours pas d’égalité, le Haut Conseil à l’Egalité a formulé des recommandations d’évolution, notamment de passer de 5 à 7 critères, comme encouragé par la Directive (UE) 2023/970 du 10 mai 2023 visant à renforcer l’application du principe de l’égalité des rémunérations pour un même travail ou un travail de même valeur. Cette dernière propose aussi de comparer des emplois de “valeur égale”. Sa transposition est prévue en France en 2025, peut-être sera-t-il l’occasion de revoir les critères de l’index. Aussi, l’introduction de nouveaux indicateurs tels que le temps partiel ou les bas salaires est essentielle. Le rapport met aussi en avant un critère de sélectivité pour un accès aux marchés publics. Seules les entreprises satisfaisant une certaine note pourraient avoir accès à de tels marchés.</p>
+
+    <h2>Une nécessaire clarification des critères d’Egapro </h2>
+    <p>Il est certain que l’index Egapro éveille les consciences et incite les entreprises à œuvrer pour l'égalité entre les hommes et les femmes à tous les échelons professionnels. Néanmoins, il convient de se demander si l’index parvient à représenter précisément les politiques sociales de chaque entreprise. L’index s’applique aux entreprises de 50 salariés et plus, certes, mais il est calculé au niveau de chaque entité juridique distincte. Quand nous regardons précisément les entreprises déclarées grâce au tableau publié par data.gouv.fr, nous avons remarqué que le nombre d’entités juridiques entre 2018 et 2023 ne varie pas pour certaines entreprises (comme Louis Vuitton avec 3 entités : Société des ateliers Louis Vuitton, Société Louis Vuitton Services et Société des magasins Louis Vuitton) mais que pour d’autres, le nombre d’entités n’a cessé d’augmenter. Par exemple, l’entreprise Saint-Gobain, membre du CAC40, est composée de 160000 salariés dont 40000 en France. 15 entités juridiques du groupe ont déclaré leurs données en 2018 contre 32 en 2023. Certes, le groupe continue de grandir mais pas jusqu’au point d’avoir multiplié le nombre d’entités juridiques par deux. Nous nous sommes alors demandé quel est l’impact d’une multiplication des entités juridiques sur l’index Egapro et si cette dernière biaise la représentativité des données fournies. La multiplication des entités juridiques est tout d’abord liée à des avantages fiscaux ainsi qu’à un allègement des responsabilités de la société mère. Ainsi, en cas de scandale ou de faillite, ce n’est pas l’entreprise qui est en danger mais seulement la filiale. De même, de mauvais résultats de l’index Egapro n’impactent pas l’image de Saint-Gobain mais seulement une de ses filiales. Aussi, les entités juridiques ont, par définition, moins de salariés que l’entreprise. Mettre en place des stratégies de recrutement, de management et de sensibilisation à l’égalité salariale est plus facile et permet de cibler précisément les services présentant des lacunes dans ces domaines. Multiplier les entités juridiques biaise donc la représentativité de l’entreprise mais permet de mieux rectifier les inégalités révélées par l’index.</p>
+    <p>Certaines entreprises échappent même à l’obligation de calculer l’index. Il ne s’agit évidemment pas d’une volonté de leur part de ne pas déclarer leurs données mais d’un constat auquel elles font face. Ainsi, lors d’un entretien, un dirigeant d’un groupe propriétaire de plusieurs agences de voyage a reconnu une faiblesse d’Egapro. Comme chacune de ses agences de voyage sont déclarées comme des entités indépendantes et chacune a moins de 50 salariés, elles ne sont pas tenues de publier cet indicateur. Les agences de voyage sont donc complètement libres de recruter qui elles veulent, sans se soucier de l’égalité salariale ni de l’équilibre hommes/femmes. Ce constat peut paraître étonnant car le patron du groupe nous a confirmé que la somme du nombre d’employés de ses agences est d’environ 500. Juridiquement, le dirigeant n’est absolument pas en tort. C'est à l’index Egapro de mieux se définir et de s’adapter aux différents statuts juridiques des entreprises.</p>
+
+</main>
+<footer>
+    <p>&copy; 2024 La vie sociale des données - Egapro</p>
+</footer>
+</body>
+</html>

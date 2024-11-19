@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La vie sociale des données - Egapro</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            min-height: 100vh; /* Assure une hauteur minimale */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Styles de l'en-tête */
+        header {
+            background: linear-gradient(45deg, red, blue);            
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 1rem; /* Ajout de marge inférieure pour l'espacement */
+        }
+
+        /* Styles du menu de navigation */
+        nav {
+            overflow: visible;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+            border-bottom: 2px solid rgba(23, 4, 4, 0.244);
+        }
+
+        /* Styles du menu déroulant */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 200px; /* Limite la largeur du menu */
+            right: auto; /* Evite le débordement à droite par défaut */
+        }
+
+        nav ul li:last-child .dropdown-menu {
+            right: 0; /* Gère les débordements sur le dernier élément */
+            left: auto;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Styles de la section principale */
+        main {
+            flex: 1; /* Prend l'espace restant pour pousser le footer en bas */
+            padding: 2rem;
+            padding-bottom: 5rem;
+            text-align: left; 
+        }
+
+        /* Styles des images */
+        .small-image {
+            width: 175px;
+            height: auto;
+        }
+
+        /* Styles du pied de page */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative; /* Le footer est fixe grâce au flex */
+            width: 100%;
+        }
+
+        /* Responsivité */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La vie sociale des données - Egapro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="introduction.html" >Introduction</a></li>
+                <li><a href="origine.html"   >L’origine du jeu de données</a></li>
+                <li><a href="categories.html" class="active" >Le critère Egapro</a></li>
+                <li><a href="usage.html">Un index aux ambitions fortes</a></li>
+                <li><a href="imparfait.html">Egapro, un index imparfait</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+                <li class="dropdown">
+                    <a href="#">Annexes</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="graphes.html">Graphes</a></li>
+                        <li><a href="entretiens.html">Entretiens</a></li>
+                        <li><a href="questionnaire.html">Questionnaire </a></li>
+                        <li><a href="textes_de_loi.html">Textes de loi</a></li>
+                        <li><a href="tableaux_equivalence.html">Tableaux d’équivalence</a></li>
+                        <li><a href="bibliographie.html">Bibliographie</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Les catégories et méthodologie de quantification de l'index Egapro : vers une mesure de l'égalité professionnelle </h2>
+        <p>L’index Egapro utilise une méthodologie structurée et un système de catégories précis. Son objectif est de fournir un outil de mesure qui, à travers cinq indicateurs, traduit les disparités dans le domaine de l'égalité salariale et professionnelle. Toutefois, cet index présente des limites et soulève des questions sur sa représentativité réelle des inégalités de genre.</p>
+        <h3>Catégories et dimensions principales de l'index Egapro</h3>
+        <p>L'index se compose de cinq indicateurs principaux, chacun visant à évaluer une dimension spécifique de l'égalité professionnelle :</p>
+        <ul>
+            <li><strong>Écart de rémunération :</strong> Cet indicateur analyse les différences de salaire entre les femmes et les hommes à poste et à âge équivalents. Il permet ainsi d’isoler l’influence du genre sur la rémunération, indépendamment des autres variables comme l’âge et le niveau de responsabilité.</li>
+            <li><strong>Écart de taux d'augmentations individuelles :</strong> Ce second indicateur mesure les écarts entre les sexes dans l'attribution des augmentations salariales. Il vise à identifier si des discriminations existent lors de la révision annuelle des salaires.</li>
+            <li><strong>Retour de congé maternité :</strong> Cet indicateur mesure le pourcentage de salariées ayant bénéficié d'une augmentation de salaire dans l’année suivant leur retour de congé maternité. Cette mesure cherche à s'assurer que la maternité ne constitue pas un frein ou une pénalité salariale pour les femmes.</li>
+            <li><strong>Parité parmi les 10 plus hautes rémunérations :</strong> En évaluant la proportion de femmes parmi les 10 plus hauts salaires de l’entreprise, cet indicateur vise à estimer l’accès des femmes aux postes les mieux rémunérés et à hautes responsabilités, où elles sont souvent sous-représentées.</li>
+            <li><strong>Écart de taux de promotions :</strong> Mesurant les différences d'accès aux promotions, cet indicateur est uniquement applicable aux entreprises de plus de 250 salariés. Il met en lumière la place des femmes dans les parcours d’avancement professionnel, un aspect souvent lié à des inégalités structurelles.</li>
+        </ul>
+        <h3>Sous-catégories et seuils : adaptation aux spécificités des entreprises</h3>
+        <p>Pour affiner son évaluation, l’index Egapro repose sur des sous-catégories et des seuils, qui permettent d’adapter les calculs à la diversité des entreprises. L’indicateur se fonde sur des sous-groupes par âge et par catégorie professionnelle, les salariés étant classés en tranches d’âge (moins de 30 ans, 30 à 39 ans, etc.) et par niveau hiérarchique (ouvriers, employés, techniciens et agents de maîtrise (TAM), cadres). Cette stratification par sous-groupes contribue à mieux cerner les écarts en fonction des spécificités de chaque segment de la population salariée. De plus, l’index est appliqué aux entreprises d’au moins 50 salariés, et le nombre d’indicateurs requis varie en fonction de la taille de l’entreprise (50 à 250 salariés, 251 à 999 salariés, et plus de 1 000 salariés). Cette différenciation permet d'adapter la méthodologie aux contraintes de chaque groupe de taille.</p>
+        <h3>Structure et représentation des données de l'index Egapro</h3>
+        <p>Les résultats de l’index Egapro sont exprimés sous forme de score global sur 100 points, obtenu en additionnant les scores des cinq indicateurs. Cette approche permet de visualiser l'efficacité des entreprises en matière d'égalité professionnelle et met en évidence les domaines nécessitant des améliorations. Les scores des indicateurs sont exprimés en pourcentage ou en nombre, offrant une mesure détaillée des forces et des faiblesses de l’entreprise pour chaque dimension de l'égalité. Enfin, les résultats sont souvent présentés sous forme de tableaux, facilitant la visualisation des écarts pour chaque indicateur et sous-catégorie. Ces tableaux rendent les disparités visibles et offrent une base pour des discussions ciblées sur les pratiques internes des entreprises.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 La vie sociale des données - Egapro</p>
+    </footer>
+</body>
+</html>

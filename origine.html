@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La vie sociale des données - Egapro</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            min-height: 100vh; /* Assure une hauteur minimale */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Styles de l'en-tête */
+        header {
+            background: linear-gradient(45deg, red, blue);            
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 1rem; /* Ajout de marge inférieure pour l'espacement */
+        }
+
+        /* Styles du menu de navigation */
+        nav {
+            overflow: visible;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+            border-bottom: 2px solid rgba(23, 4, 4, 0.244);
+        }
+
+        /* Styles du menu déroulant */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 200px; /* Limite la largeur du menu */
+            right: auto; /* Evite le débordement à droite par défaut */
+        }
+
+        nav ul li:last-child .dropdown-menu {
+            right: 0; /* Gère les débordements sur le dernier élément */
+            left: auto;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Styles de la section principale */
+        main {
+            flex: 1; /* Prend l'espace restant pour pousser le footer en bas */
+            padding: 2rem;
+            padding-bottom: 5rem;
+            text-align: left; 
+        }
+
+        /* Styles des images */
+        .small-image {
+            width: 175px;
+            height: auto;
+        }
+
+        /* Styles du pied de page */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative; /* Le footer est fixe grâce au flex */
+            width: 100%;
+        }
+
+        /* Responsivité */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La vie sociale des données - Egapro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="introduction.html" >Introduction</a></li>
+                <li><a href="origine.html" class="active"   >L’origine du jeu de données</a></li>
+                <li><a href="categories.html">Le critère Egapro</a></li>
+                <li><a href="usage.html">Un index aux ambitions fortes</a></li>
+                <li><a href="imparfait.html">Egapro, un index imparfait</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+                <li class="dropdown">
+                    <a href="#">Annexes</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="graphes.html">Graphes</a></li>
+                        <li><a href="entretiens.html">Entretiens</a></li>
+                        <li><a href="questionnaire.html">Questionnaire </a></li>
+                        <li><a href="textes_de_loi.html">Textes de loi</a></li>
+                        <li><a href="tableaux_equivalence.html">Tableaux d’équivalence</a></li>
+                        <li><a href="bibliographie.html">Bibliographie</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>L’origine du jeu de données et ses implications</h2>
+        <p>Depuis sa mise en place en 2018, Egapro a pris une place essentielle dans la lutte contre les inégalités salariales entre les sexes en France. Cet outil est devenu un pilier de la transparence en matière de rémunération, forçant les entreprises de 50 salariés et plus à se mesurer et à rendre publiques leurs performances dans ce domaine. Ancré dans le mouvement pour l’égalité professionnelle entre les femmes et les hommes, l'index et son jeu de données ont des objectifs précis et des implications majeures.</p>
+        <h3>Origines et objectifs</h3>
+        <p>L’index Egapro a été mis en œuvre sous l’égide du Ministère du Travail en France. L'index est un produit des efforts du gouvernement pour inciter les entreprises à agir concrètement en matière d’égalité professionnelle. Le ministère du Travail a collaboré avec la Fabrique numérique des ministères sociaux pour développer l’indicateur Egapro. Cette approche collaborative a permis de structurer l’index autour de mesures spécifiques, facilitant son adoption et sa mise en œuvre par les entreprises.</p>
+        <p>L’index Egapro poursuit un double objectif de transparence et d'incitation à l'action. D’une part, il vise à exposer au public les performances des entreprises en matière d’égalité salariale. D’autre part, il les encourage activement à réduire les écarts de rémunération grâce à une évaluation visible et facilement compréhensible de leur engagement. Cet outil de mesure et de responsabilisation incite ainsi les entreprises à prendre des initiatives concrètes pour promouvoir l’équité salariale, sous la pression de l’opinion publique et des obligations légales. Pour les chercheurs, journalistes et activistes, le jeu de données Egapro constitue aussi une source précieuse pour analyser les tendances, suivre l’évolution des écarts de rémunération et évaluer l’efficacité des politiques publiques.</p>
+        <p>L’index s’inscrit dans un mouvement global de promotion de l'égalité professionnelle, répondant aux engagements internationaux en matière de lutte contre les discriminations. Ce cadre institutionnel plus large a permis d’asseoir l’index Egapro comme un standard de mesure en France, illustrant la volonté croissante de rendre visible et mesurable l’égalité salariale, et de combler les disparités persistantes entre les femmes et les hommes.</p>
+        <h3>Le jeu de données Egapro</h3>
+        <p>Le jeu de données Egapro compile les résultats de l'index calculés par chaque entreprise concernée, et est hébergé sur la plateforme data.gouv.fr, le portail officiel du gouvernement français pour la diffusion de données publiques. Il est produit par le Ministère du Travail et de l’Emploi. Ce ministère joue un rôle central dans la collecte, la mise à jour et la publication des résultats de chaque entreprise, permettant un suivi accessible de l'évolution de l'égalité salariale en France. Disponible sous la Licence Ouverte / Open Licence version 2.0, ce jeu de données peut être librement utilisé et réutilisé, facilitant ainsi l’accès des citoyens, chercheurs et journalistes aux données. Ce jeu de données nous a par exemple permis de produire des graphiques (voir annexe). Cette publication sans filtre des données reflète un engagement envers la transparence et le partage de l'information, essentiels pour sensibiliser et responsabiliser les entreprises concernées par l’index mais aussi leurs employés et plus globalement, la population.</p>
+        <p>Les données couvrent la période de 2018 à 2023 et englobent toutes les entreprises françaises d’au moins 50 salariés, ces dernières étant soumises à l'obligation de calcul et de publication de l'index. Le périmètre de couverture inclut l’ensemble du territoire français, permettant une analyse nationale et régionale de l'égalité salariale.</p>
+        <p>La mise à jour des données est censée être quotidienne, permettant un suivi en temps quasi réel des améliorations ou stagnations en matière d'égalité. Cependant, des retards dans les mises à jour ont été notés, signalant un défi logistique dans la gestion de la publication de données sensibles et complexes.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 La vie sociale des données - Egapro</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La vie sociale des données - Egapro</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            min-height: 100vh; /* Assure une hauteur minimale */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Styles de l'en-tête */
+        header {
+            background: linear-gradient(45deg, red, blue);            
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 1rem; /* Ajout de marge inférieure pour l'espacement */
+        }
+
+        /* Styles du menu de navigation */
+        nav {
+            overflow: visible;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li a.active {
+            font-weight: bold;
+            border-bottom: 2px solid rgba(23, 4, 4, 0.244);
+        }
+
+        /* Styles du menu déroulant */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 200px; /* Limite la largeur du menu */
+            right: auto; /* Evite le débordement à droite par défaut */
+        }
+
+        nav ul li:last-child .dropdown-menu {
+            right: 0; /* Gère les débordements sur le dernier élément */
+            left: auto;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Styles de la section principale */
+        main {
+            flex: 1; /* Prend l'espace restant pour pousser le footer en bas */
+            padding: 2rem;
+            padding-bottom: 5rem;
+            text-align: left; 
+        }
+
+        /* Styles des images */
+        .small-image {
+            width: 175px;
+            height: auto;
+        }
+
+        /* Styles du pied de page */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative; /* Le footer est fixe grâce au flex */
+            width: 100%;
+        }
+
+        /* Responsivité */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La vie sociale des données - Egapro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="introduction.html" >Introduction</a></li>
+                <li><a href="origine.html"   >L’origine du jeu de données</a></li>
+                <li><a href="categories.html"  >Le critère Egapro</a></li>
+                <li><a href="usage.html" >Un index aux ambitions fortes</a></li>
+                <li><a href="imparfait.html"  >Egapro, un index imparfait</a></li>
+                <li><a href="conclusion.html" >Conclusion</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active"> Annexes </a>
+                    <ul class="dropdown-menu" >
+                        <li><a href="graphes.html">Graphes</a></li>
+                        <li><a href="entretiens.html">Entretiens</a></li>
+                        <li><a href="questionnaire.html">Questionnaire </a></li>
+                        <li><a href="textes_de_loi.html">Textes de loi</a></li>
+                        <li><a href="tableaux_equivalence.html">Tableaux d’équivalence</a></li>
+                        <li><a href="bibliographie.html">Bibliographie</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<body>
+    <h1>Textes de loi</h1>
+    <h2>Extrait de la loi Avenir professionnel du 5 septembre 2018</h2>
+    <p>Article 104<br>
+    I.-Après le chapitre II du titre IV du livre Ier de la première partie du code du travail, il est inséré un chapitre II bis ainsi rédigé :</p>
+    <h3>Chapitre II bis</h3>
+    <p>Mesures visant à supprimer les écarts de rémunération entre les femmes et les hommes dans l'entreprise</p>
+    <p>Art. L. 1142-7.-L'employeur prend en compte un objectif de suppression des écarts de rémunération entre les femmes et les hommes.</p>
+    <p>Art. L. 1142-8.-Dans les entreprises d'au moins cinquante salariés, l'employeur publie chaque année des indicateurs relatifs aux écarts de rémunération entre les femmes et les hommes et aux actions mises en œuvre pour les supprimer, selon des modalités et une méthodologie définies par décret.</p>
+    <p>Art. L. 1142-9.-Dans les entreprises d'au moins cinquante salariés, lorsque les résultats obtenus par l'entreprise au regard des indicateurs mentionnés à l'article L. 1142-8 se situent en-deçà d'un niveau défini par décret, la négociation sur l'égalité professionnelle prévue au 2° de l'article L. 2242-1 porte également sur les mesures adéquates et pertinentes de correction et, le cas échéant, sur la programmation, annuelle ou pluriannuelle, de mesures financières de rattrapage salarial. En l'absence d'accord prévoyant de telles mesures, celles-ci sont déterminées par décision de l'employeur, après consultation du comité social et économique. La décision est déposée auprès de l'autorité administrative dans les mêmes conditions que le plan d'action mentionné à l'article L. 2242-3. L'autorité administrative peut présenter des observations sur les mesures prévues par l'accord ou la décision de l'employeur.</p>
+
+    <h2>Extrait de la loi du 24 décembre 2021 visant à accélérer l’égalité économique et professionnelle</h2>
+    <p>Article 14<br>
+    I.-Le code du travail est ainsi modifié :</p>
+    <p>1° Le chapitre II bis du titre IV du livre Ier de la première partie est ainsi modifié :</p>
+    <p>a) L'intitulé est complété par les mots : « et à assurer une répartition équilibrée de chaque sexe parmi les cadres dirigeants et les membres des instances dirigeantes » ;</p>
+    <p>b) Sont ajoutés des articles L. 1142-11 à L. 1142-13 ainsi rédigés :</p>
+    <p>Art. L. 1142-11.-Dans les entreprises qui, pour le troisième exercice consécutif, emploient au moins mille salariés, l'employeur publie chaque année les écarts éventuels de représentation entre les femmes et les hommes parmi les cadres dirigeants au sens de l'article L. 3111-2 du présent code, d'une part, et les membres des instances dirigeantes définies à l'article L. 23-12-1 du code de commerce, d'autre part.<br>
+    Par dérogation aux articles L. 311-6 et L. 312-1-2 du code des relations entre le public et l'administration, ces écarts de représentation sont rendus publics sur le site internet du ministère chargé du travail, dans des conditions définies par décret.<br>
+    La proportion de personnes de chaque sexe au sein de chacun des ensembles mentionnés au premier alinéa du présent article ne peut être inférieure à 30 %.</p>
+    <p>Art. L. 1142-12.-Dans les entreprises qui, pour le troisième exercice consécutif, emploient au moins mille salariés, lorsque l'entreprise ne se conforme pas à l'obligation prévue au dernier alinéa de l'article L. 1142-11, elle dispose d'un délai de deux ans pour se mettre en conformité. L'entreprise doit, au bout d'un an, publier des objectifs de progression et les mesures de correction retenues, selon des modalités définies par décret. A l'expiration de ce délai, si les résultats obtenus sont toujours en deçà du taux fixé, l'employeur peut se voir appliquer une pénalité financière.<br>
+    Le montant de la pénalité prévue au premier alinéa du présent article est fixé au maximum à 1 % des rémunérations et gains, au sens du I de l'article L. 242-1 du code de la sécurité sociale et du premier alinéa de l'article L. 741-10 du code rural et de la pêche maritime, versés aux travailleurs salariés ou assimilés au cours de l'année civile précédant l'expiration du délai mentionné au premier alinéa du présent article. Le montant est fixé par l'autorité administrative, dans des conditions prévues par décret en Conseil d'Etat, en fonction de la situation initiale de l'entreprise, des efforts constatés dans l'entreprise en matière de représentation des femmes et des hommes ainsi que des motifs de sa défaillance.<br>
+    Le produit de cette pénalité est versé au budget général de l'Etat.</p>
+    <p>Art. L. 1142-13.-Dans les entreprises qui, pour le troisième exercice consécutif, emploient au moins mille salariés, lorsque l'entreprise ne se conforme pas à l'obligation prévue au dernier alinéa de l'article L. 1142-11, la négociation sur l'égalité professionnelle prévue au 2° de l'article L. 2242-1 porte également sur les mesures adéquates et pertinentes de correction. En l'absence d'accord prévoyant de telles mesures, celles-ci sont déterminées par décision de l'employeur, après consultation du comité social et économique de l'entreprise. La décision est déposée auprès de l'autorité administrative dans les mêmes conditions que le plan d'action mentionné au premier alinéa de l'article L. 2242-3. L'autorité administrative peut présenter des observations sur les mesures prévues par l'accord ou la décision de l'employeur, qui sont présentées à l'organe chargé de l'administration ou de la surveillance de l'entreprise ainsi qu'au comité social et économique de l'entreprise.</p>
+    <p>2° A la seconde phrase du premier alinéa de l'article L. 2312-18, après le mot : « rémunération », sont insérés les mots : « et de répartition entre les femmes et les hommes parmi les cadres dirigeants et les membres des instances dirigeantes définies à l'article L. 23-12-1 du code de commerce, » et sont ajoutés les mots : « du présent code ».</p>
+</body>
+</html> 
+</body>
+</html>
+</main>
+<footer>
+<p>&copy; 2024 La vie sociale des données - Egapro</p>
+</footer>
+</body>
+</html>
