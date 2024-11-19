@@ -7,8 +7,7 @@
 <body>
     <h1>Egapro</h1>
     <h2>Index de l’égalité professionnelle et représentation équilibrée femmes-hommes</h2>
-</body>
-</html>
+
 
 <body>
     <p>Nous avons décidé de nous intéresser à l’index de l’égalité professionnelle et représentation équilibrée femmes-hommes, dit Egapro. Mis en place par la loi du 5 septembre 2018 pour la liberté de choisir son avenir professionnel, il a pour objectif de calculer les écarts de rémunération entre les femmes et les hommes dans les entreprises de 50 salariés ou plus. Bien que peu connu du grand public, il revêt des enjeux divers, notamment sociaux, économiques ou encore politiques. Il nous a donc semblé pertinent d’étudier ce récent index qui joue une place toujours plus grande dans les décisions stratégiques des entreprises.</p>
